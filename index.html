@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="spinload.css">
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div id="wrapper  wrapperjs">
+    <div id="preloader">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+
+  <div id="header">
+    <div class="image">
+      <img src="./cuteCat.jpg" alt="">
+    </div>
+    <div class="text2">
+      <h1>hi luuu cậu</h1>
+      <p>Tớ ko có gì to lớn, nên mong cậu món quà nho nhỏ này (>.<)</p>
+    </div>
+    <div id="button">
+      <button class="bt">OK </button>
+    </div>
+  </div>
+
+
+
+
+    <div id="page-2" class="page2-close">
+        <div class="container">  
+            <div class="valentines">
+              <div class="envelope"></div>
+              <div class="front"></div>
+              <div class="card">
+              <div class="text">Happy</br> Valentine's</br> Day!</br>Mai Hoa</div>
+              <div class="heart"</div>
+              </div>
+              <div class="hearts">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+              </div>
+            </div>
+            </div>
+            <div class="shadow"></div>
+            </div>
+    </div>
+    <script>
+      const hideloading = document.querySelector('#preloader');
+      const button= document.querySelector('.bt');
+      const header = document.querySelector('#header');
+      const page2= document.querySelector('#page-2');
+      button.addEventListener('click', (event)=>{
+          header.classList.add('page2-close');
+          page2.classList.remove('page2-close');
+      })
+      setTimeout(()=>{
+        hideloading.classList.add('hidespin')
+      }, 3000);
+    </script>
+</body>
+</html>
